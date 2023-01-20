@@ -21,6 +21,14 @@ const routes: Routes = [
   {
     path: 'contractor-login',
     loadChildren: () => import('./contractor-login/contractor-login.module').then( m => m.ContractorLoginPageModule)
+  },
+  {
+    path: 'contractor-register',
+    loadChildren: () => import('./contractor-register/contractor-register.module').then( m => m.ContractorRegisterPageModule)
+  },
+  {
+    path: 'contractor-options',
+    loadChildren: () => import('./contractor-options/contractor-options.module').then( m => m.ContractorOptionsPageModule)
   }
 ];
 @NgModule({
